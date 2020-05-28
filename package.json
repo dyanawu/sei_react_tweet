@@ -3,7 +3,7 @@
   "description": "React boilerplate with ES2015, Express.js, and Webpack 4",
   "license": "MIT",
   "engines": {
-    "node": "11.6.0"
+    "node": ">=11.6.0"
   },
   "scripts": {
     "build": "webpack -p --progress --config=webpack.config.js --mode none"
