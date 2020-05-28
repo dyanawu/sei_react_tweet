@@ -16,7 +16,7 @@ class Name extends Component {
   render() {
     let profileLink = `https://twitter.com/${this.props.handle}`
     return (
-      <a href={profileLink}><strong>{this.props.name}</strong></a>
+      <a href={profileLink} className="username"><strong>{this.props.name}</strong></a>
     );
   }
 }
@@ -24,7 +24,7 @@ class Name extends Component {
 class Handle extends Component {
   render() {
     return (
-      <span style={{color: "grey"}}>@{this.props.handle}</span>
+      <span className="handle">@{this.props.handle}</span>
     );
   }
 }

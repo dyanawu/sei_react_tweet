@@ -10,7 +10,7 @@ class App extends React.Component {
     });
 
     return (
-      <div>
+      <div className="tweets">
         {tweetitems}
       </div>
     );
@@ -51,20 +51,11 @@ class Tweet extends React.Component {
     }
 
     let mediaElements = mediaList.map(mediaObj => {
-      return <img src={mediaObj.media_url}
-                  style={{display: "block",
-                          margin:"0 auto 20px auto",
-                          width:"90%"}}/>;
+      return <img src={mediaObj.media_url}/>;
     });
 
     return (
-      <div class="singletweet"
-           style={{
-             border: "1px grey dotted",
-             paddingLeft:"15px",
-             width: "600px",
-             margin: "0 auto"
-           }}>
+      <div className="singletweet">
         <TweetTop
           name={tweet.user.name}
           handle={tweet.user.screen_name}
