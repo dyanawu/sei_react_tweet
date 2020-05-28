@@ -33,6 +33,9 @@ app.get('/banana', (request, response)=>{
 app.get('/react', (req, res) => {
   const myHtml = `
     <html>
+      <head>
+        <link rel="stylesheet" href="/style.css">
+      </head>
       <body>
         <h1>Baby Tweets <small>tweet tweet tweet tweet tweet tweet</small></h1>
         <div id="app"></div>
