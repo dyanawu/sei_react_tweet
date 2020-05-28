@@ -6,6 +6,10 @@ const IS_DEV = process.env.NODE_ENV !== 'production';
 module.exports = {
   mode: 'production',
   target: 'web',
+  watch: true,
+  watchOptions: {
+    ignored: ['/node_modules/', '**/.*']
+  },
   entry: ['./src/client/index.jsx'],
   output: {
     publicPath: '/',
@@ -40,5 +44,8 @@ module.exports = {
     colors: true,
     entrypoints: false,
     modules: false
+  },
+  optimization: {
+    minimize: false
   }
 };
